@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-    <div>Hello world</div>
+    <h1>О блоге</h1>
+    <p>Эксперименты с Ларавелем на Хекслете</p>
 </body>
 </html>
