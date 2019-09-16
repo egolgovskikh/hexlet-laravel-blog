@@ -23,3 +23,7 @@ Route::get('/about', function () {
 Route::get('/articles', 'ArticleController@index')
     ->name('articles.index'); // имя маршрута, нужно для того чтобы не создавать ссылки руками
 
+# id – параметр, который зависит от конкретной статьи
+# Фигурные скобки нужны для описания параметров маршрута
+Route::get('/articles/{id}', 'ArticleController@show')
+    ->name('articles.show');
