@@ -18,3 +18,8 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+// Название сущности в URL во множественном числе, контроллер в единственном
+Route::get('/articles', 'ArticleController@index')
+    ->name('articles.index'); // имя маршрута, нужно для того чтобы не создавать ссылки руками
+
